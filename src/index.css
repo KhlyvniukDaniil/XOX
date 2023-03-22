@@ -1,0 +1,96 @@
+:root {
+  --dark-bg-color: #050505;
+  --green-color: #55D8C1;
+  --yellow-color: #FCF69C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Courier, monospace, sans-serif;
+
+}
+
+body {
+  background-color: var(--dark-bg-color);
+}
+
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  position: absolute;
+  inset: 0;
+  background-color: var(--dark-bg-color);
+  z-index: 20;
+}
+
+.modal {
+  z-index: 15;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--yellow-color);
+  text-shadow: 1px 1px 5px var(--yellow-color)
+}
+
+.modal h1 {
+  font-size: 3em;
+}
+
+.modal label {
+  display: flex;
+  gap: .5em;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: .5em;
+  cursor: pointer;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: .5em;
+  margin: .5em;
+  font-size: 2rem;
+  background-color: var(--green-color);
+  box-shadow: #55D8C1 1px 1px 5px;
+  cursor: pointer;
+  border-radius: .2em;
+  font-weight: bold;
+}
+
+.reload {
+  border: none;
+  outline: none;
+  padding: .5em;
+  margin-top: 5em;
+  margin-left: 5em;
+  background: url("./components/Modal/pngwing.png") center no-repeat;
+  background-size: cover;
+  width: 5em;
+  aspect-ratio: 1;
+  cursor: pointer;
+  position: relative;
+  z-index: 15;
+}
+
+
+.color-green {
+  color: var(--green-color);
+  text-shadow: 1px 1px 5px var(--green-color)
+
+}
+
+.color-yellow {
+  color: var(--yellow-color);
+}
