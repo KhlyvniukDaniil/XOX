@@ -1,6 +1,6 @@
 # XOX game (tic-tac-toe)
 
-## [deployment](https://daniil-khlyvniuk.github.io/XOX-minimax/)
+## [deployment](https://khlyvniukdaniil.github.io/XOX/)
 
 ![](src/images/screenshot.png)
 
